@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuijohk2a8asq"]
+
+[ext_resource type="Script" uid="uid://lfr0acvkugc7" path="res://spawn.gd" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cnvyfqwaj2e47" path="res://platform.tscn" id="3_h2yge"]
+
+[node name="main" type="Node2D"]
+position = Vector2(16, 7)
+
+[node name="spawn" type="Node2D" parent="."]
+script = ExtResource("2_0xm2m")
+platforms = Array[PackedScene]([ExtResource("3_h2yge")])
+
+[node name="Timer" type="Timer" parent="spawn"]
+wait_time = 2.0
+autostart = true
+
+[node name="Marker2D" type="Marker2D" parent="spawn"]
+position = Vector2(955, 119)
+
+[node name="Platform" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(-84, -11)
+
+[connection signal="timeout" from="spawn/Timer" to="spawn" method="_on_timer_timeout"]
