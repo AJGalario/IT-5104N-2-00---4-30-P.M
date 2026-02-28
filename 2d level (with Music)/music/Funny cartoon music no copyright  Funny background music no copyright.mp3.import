@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3ws7mh3sfwdb"
+path="res://.godot/imported/Funny cartoon music no copyright  Funny background music no copyright.mp3-df9195ea695cc011cfc5247b19f4785e.mp3str"
+
+[deps]
+
+source_file="res://music/Funny cartoon music no copyright  Funny background music no copyright.mp3"
+dest_files=["res://.godot/imported/Funny cartoon music no copyright  Funny background music no copyright.mp3-df9195ea695cc011cfc5247b19f4785e.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

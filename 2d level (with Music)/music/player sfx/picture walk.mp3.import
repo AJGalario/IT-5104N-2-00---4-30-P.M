@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bg8wcqptlwpdd"
+path="res://.godot/imported/picture walk.mp3-47adfef7fd7bc3d7974e571c775e318b.mp3str"
+
+[deps]
+
+source_file="res://music/player sfx/picture walk.mp3"
+dest_files=["res://.godot/imported/picture walk.mp3-47adfef7fd7bc3d7974e571c775e318b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

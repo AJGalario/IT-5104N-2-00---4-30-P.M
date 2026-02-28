@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://uf8b5l6tyb4v"]
+
+[ext_resource type="Texture2D" uid="uid://by5os5btlvts8" path="res://MC_walk_anim.png" id="1_glpr6"]
+[ext_resource type="Script" uid="uid://bembjrhi2e88p" path="res://character.gd" id="1_pjt0s"]
+[ext_resource type="AudioStream" uid="uid://df6n4esdwops8" path="res://music/player sfx/Screen Recording 2026-02-27 162549 - Trim.mp3" id="3_wfnr8"]
+[ext_resource type="AudioStream" uid="uid://c7ev7ysgkg6yv" path="res://music/player sfx/player_jumping.mp3" id="4_px5sl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pjt0s"]
+radius = 21.0
+height = 42.0
+
+[node name="Character" type="CharacterBody2D" unique_id=249399236]
+position = Vector2(93, 175)
+script = ExtResource("1_pjt0s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1482478409]
+position = Vector2(11.499999, 12.500001)
+scale = Vector2(2.4375, 2.5625002)
+texture = ExtResource("1_glpr6")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=942126954]
+position = Vector2(6, 14)
+shape = SubResource("CapsuleShape2D_pjt0s")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=493928869]
+position = Vector2(99, 144)
+
+[node name="Walking" type="AudioStreamPlayer2D" parent="." unique_id=715547434]
+stream = ExtResource("3_wfnr8")
+bus = &"sfx"
+
+[node name="Jumping" type="AudioStreamPlayer2D" parent="." unique_id=304130734]
+stream = ExtResource("4_px5sl")
+bus = &"sfx"

@@ -1,0 +1,136 @@
+[gd_scene load_steps=9 format=3 uid="uid://k60u77nrwnh6"]
+
+[ext_resource type="PackedScene" uid="uid://uf8b5l6tyb4v" path="res://character.tscn" id="1_mi4ay"]
+[ext_resource type="Script" uid="uid://dok7hme1yqpia" path="res://scripts/level_2.gd" id="1_v5uil"]
+[ext_resource type="PackedScene" uid="uid://cuijohk2a8asq" path="res://main.tscn" id="2_pqqg8"]
+[ext_resource type="Texture2D" uid="uid://cfc0i2vky6mdl" path="res://final_tileset.png" id="4_v5uil"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5uil"]
+size = Vector2(47, 58)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5722l"]
+texture = ExtResource("4_v5uil")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:4/0 = 0
+8:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ilhis"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_5722l")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5722l"]
+size = Vector2(2509, 284)
+
+[node name="level 2" type="Node2D"]
+script = ExtResource("1_v5uil")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1145.0
+offset_bottom = 641.0
+color = Color(0.049045444, 0.3403135, 0.6024035, 1)
+
+[node name="Character" parent="." instance=ExtResource("1_mi4ay")]
+position = Vector2(110, 301)
+
+[node name="to lvl 3" type="Area2D" parent="."]
+
+[node name="ColorRect2" type="ColorRect" parent="to lvl 3" groups=["platform"]]
+offset_left = 1090.0
+offset_top = 120.0
+offset_right = 1144.0
+offset_bottom = 179.0
+color = Color(1, 1, 0, 1)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="to lvl 3" groups=["platform"]]
+position = Vector2(1117.5, 150)
+shape = SubResource("RectangleShape2D_v5uil")
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(23, -22)
+tile_set = SubResource("TileSet_ilhis")
+format = 2
+layer_0/tile_data = PackedInt32Array(2097152, 0, 0, 2162688, 0, 1, 2097153, 65536, 0, 2162689, 65536, 1, 2097154, 0, 0, 2162690, 0, 1, 2097155, 65536, 0, 2162691, 65536, 1, 2097156, 0, 0, 2162692, 0, 1, 2097157, 65536, 0, 2162693, 65536, 1, 2097158, 0, 0, 2162694, 0, 1, 2097159, 65536, 0, 2162695, 65536, 1, 2097160, 0, 0, 2162696, 0, 1, 2097161, 65536, 0, 2162697, 65536, 1, 2097166, 0, 0, 2162702, 0, 1, 2097167, 65536, 0, 2162703, 65536, 1, 2097174, 0, 0, 2162710, 0, 1, 2097175, 65536, 0, 2162711, 65536, 1, 2097176, 0, 0, 2162712, 0, 1, 2097177, 65536, 0, 2162713, 65536, 1, 2097178, 0, 0, 2162714, 0, 1, 2097179, 65536, 0, 2162715, 65536, 1, 2097180, 0, 0, 2162716, 0, 1, 2097181, 65536, 0, 2162717, 65536, 1, 1966108, 0, 0, 2031644, 0, 1, 1966109, 65536, 0, 2031645, 65536, 1, 1966114, 0, 0, 2031650, 0, 1, 1966115, 65536, 0, 2031651, 65536, 1, 1966116, 0, 0, 2031652, 0, 1, 1966117, 65536, 0, 2031653, 65536, 1, 2097188, 0, 0, 2162724, 0, 1, 2097189, 65536, 0, 2162725, 65536, 1, 2097190, 0, 0, 2162726, 0, 1, 2097191, 65536, 0, 2162727, 65536, 1, 2097192, 0, 0, 2162728, 0, 1, 2097193, 65536, 0, 2162729, 65536, 1, 2097194, 0, 0, 2162730, 0, 1, 2162735, 65536, 1, 2097200, 0, 0, 2162736, 0, 1, 2097201, 65536, 0, 2162737, 65536, 1, 2097202, 0, 0, 2162738, 0, 1, 2097203, 65536, 0, 2162739, 65536, 1, 2097204, 0, 0, 2162740, 0, 1, 2097205, 65536, 0, 2162741, 65536, 1, 1966134, 0, 0, 2031670, 0, 1, 1966135, 65536, 0, 2031671, 65536, 1, 1966140, 0, 0, 2031676, 0, 1, 1966141, 65536, 0, 2031677, 65536, 1, 2097212, 0, 0, 2162748, 0, 1, 2097213, 65536, 0, 2162749, 65536, 1, 2097214, 0, 0, 2162750, 0, 1, 2097215, 65536, 0, 2162751, 65536, 1, 2097216, 0, 0, 2162752, 0, 1, 2097217, 65536, 0, 2162753, 65536, 1, 1179667, 0, 0, 1245203, 0, 1, 1179668, 65536, 0, 1245204, 65536, 1, 1048595, 0, 0, 1114131, 0, 1, 1048596, 65536, 0, 1114132, 65536, 1, 917523, 0, 0, 983059, 0, 1, 917524, 65536, 0, 983060, 65536, 1, 1245225, 0, 0, 1310761, 0, 1, 1245226, 65536, 0, 1310762, 65536, 1, 1114153, 0, 0, 1179689, 0, 1, 1114154, 65536, 0, 1179690, 65536, 1, 983081, 0, 0, 1048617, 0, 1, 983082, 65536, 0, 1048618, 65536, 1, 852009, 0, 0, 917545, 0, 1, 852010, 65536, 0, 917546, 65536, 1, 1966085, 0, 0, 2031621, 0, 1, 1966086, 65536, 0, 2031622, 65536, 1, 1966083, 0, 0, 2031619, 0, 1, 1966084, 65536, 0, 2031620, 65536, 1, 1835011, 0, 0, 1900547, 0, 1, 1835012, 65536, 0, 1900548, 65536, 1, 1835009, 0, 0, 1900545, 0, 1, 1835010, 65536, 0, 1900546, 65536, 1, 1966081, 0, 0, 2031617, 0, 1, 1966082, 65536, 0, 2031618, 65536, 1, 2031615, 0, 0, 2097151, 0, 1, 1966080, 65536, 0, 2031616, 65536, 1, 1900543, 0, 0, 1966079, 0, 1, 1835008, 65536, 0, 1900544, 65536, 1, 1769471, 0, 1, 1835007, 0, 1, 1703936, 65536, 1, 1769472, 65536, 1, 1703935, 0, 0, 1638400, 65536, 0, 1703937, 0, 0, 1769473, 0, 1, 1703938, 65536, 0, 1769474, 65536, 1, 2097162, 0, 0, 2162698, 0, 1, 2097163, 65536, 0, 2162699, 65536, 1, 2097164, 0, 0, 2162700, 0, 1, 2097165, 65536, 0, 2162701, 65536, 1)
+
+[node name="main" parent="." instance=ExtResource("2_pqqg8")]
+position = Vector2(115, 39)
+
+[node name="death" type="Area2D" parent="."]
+position = Vector2(422, 738)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="death"]
+shape = SubResource("RectangleShape2D_5722l")
+
+[connection signal="body_entered" from="to lvl 3" to="." method="_on_to_lvl_3_body_entered"]
+[connection signal="body_entered" from="death" to="." method="_on_death_body_entered"]
