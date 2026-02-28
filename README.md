@@ -15,3 +15,7 @@ Week 3: Activity1 UI/UX & Audio
 <img width="1107" height="565" alt="Screenshot 2026-02-28 183003" src="https://github.com/user-attachments/assets/fb98a90b-4c42-45e2-bfc1-7faee6d693a6" />
 <img width="1144" height="565" alt="Screenshot 2026-02-28 183049" src="https://github.com/user-attachments/assets/cecc7a50-9d42-45ce-8c64-619703e318c5" />
 <img width="1140" height="583" alt="Screenshot 2026-02-28 183246" src="https://github.com/user-attachments/assets/67a5051a-5c5c-4fb9-99e2-a0de82d06012" />
+
+Week 3 Activity 2 AI & Enemies
+<img width="1106" height="564" alt="Screenshot 2026-03-01 003113" src="https://github.com/user-attachments/assets/aa14e2a9-5b7a-4dbd-aa33-5f7ca99db37c" />
+Enemies = crabs
