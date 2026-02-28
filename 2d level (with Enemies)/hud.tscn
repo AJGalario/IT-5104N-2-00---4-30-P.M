@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cn8qn2xxgnp6"]
+
+[ext_resource type="Script" uid="uid://ddsxq260had7g" path="res://hud.gd" id="1_37p78"]
+
+[node name="HUD" type="CanvasLayer" unique_id=102331438]
+script = ExtResource("1_37p78")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1302435569]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=485885026]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="LabelHealth" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=203407400]
+modulate = Color(0, 0.8723234, 0.057542346, 1)
+layout_mode = 2
+
+[node name="BarHealth" type="ProgressBar" parent="HBoxContainer/VBoxContainer" unique_id=1042157844]
+modulate = Color(0.48922288, 0.063017555, 0.07091204, 1)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="LabelDeath" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=2017985242]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2

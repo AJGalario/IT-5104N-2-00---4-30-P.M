@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cuijohk2a8asq"]
+
+[ext_resource type="Script" uid="uid://7l5xkyfejgu4" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://lfr0acvkugc7" path="res://spawn.gd" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cnvyfqwaj2e47" path="res://platform.tscn" id="3_h2yge"]
+
+[node name="main" type="Node2D" unique_id=1682650108]
+position = Vector2(16, 7)
+script = ExtResource("1_1bvp3")
+
+[node name="spawn" type="Node2D" parent="." unique_id=1771570473]
+script = ExtResource("2_0xm2m")
+platforms = Array[PackedScene]([ExtResource("3_h2yge")])
+
+[node name="Timer" type="Timer" parent="spawn" unique_id=413225756]
+wait_time = 2.0
+autostart = true
+
+[node name="Marker2D" type="Marker2D" parent="spawn" unique_id=1596119396]
+position = Vector2(955, 119)
+
+[node name="Platform" parent="." unique_id=278462841 instance=ExtResource("3_h2yge")]
+position = Vector2(-84, -11)
+
+[connection signal="timeout" from="spawn/Timer" to="spawn" method="_on_timer_timeout"]
