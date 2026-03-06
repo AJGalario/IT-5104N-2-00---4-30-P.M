@@ -1,11 +1,16 @@
-[gd_scene format=3 uid="uid://rk60fwu2jysm"]
+[gd_scene load_steps=3 format=3 uid="uid://rk60fwu2jysm"]
 
 [ext_resource type="PackedScene" uid="uid://bigdna540164s" path="res://levels/next_lvl.tscn" id="1_k4umy"]
 [ext_resource type="PackedScene" uid="uid://uf8b5l6tyb4v" path="res://character.tscn" id="2_h34wg"]
 
-[node name="Node2D" type="Node2D" unique_id=355701787]
+[node name="Node2D" type="Node2D"]
 
-[node name="Character" parent="." unique_id=632618962 instance=ExtResource("2_h34wg")]
+[node name="Character" parent="." instance=ExtResource("2_h34wg")]
+base_speed = 200.0
+max_speed = 500.0
+acceleration_rate = 5.0
+jump_velocity = -400.0
+gravity = 900.0
 
-[node name="next lvl" parent="." unique_id=1620671975 instance=ExtResource("1_k4umy")]
+[node name="next lvl" parent="." instance=ExtResource("1_k4umy")]
 position = Vector2(2, 31)

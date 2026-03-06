@@ -5,10 +5,11 @@ extends CanvasLayer
 @onready var death_label  : Label       = $HBoxContainer/VBoxContainer/LabelDeath
 
 func _ready() -> void:
+	add_to_group("hud")
 	health_bar.min_value = 0
 	health_bar.max_value = 100
 	health_bar.value     = 100
-	health_label.text    = "Health Points"
+	health_label.text    = "Health Points" 
 	death_label.text     = "DEATHS: 0"
 
 func update_health(current: int, maximum: int) -> void:
