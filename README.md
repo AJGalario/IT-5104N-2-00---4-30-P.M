@@ -1,6 +1,7 @@
 # IT-5104N-2-00---4-30-P.M
 Simple Scene with moving node 
 
+<img width="1920" height="1080" alt="Screenshot 2026-03-06 at 6 00 45 PM" src="https://github.com/user-attachments/assets/2b4d8693-a80a-4981-a421-c5099a08eb57" />
 
 Week 2: Simple 2D platform with Physics
 <img width="1920" height="1080" alt="Screenshot 2026-02-20 at 3 35 42 PM" src="https://github.com/user-attachments/assets/aa3ec54e-ae7f-4d74-97a4-d21b31c9b630" />
